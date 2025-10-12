@@ -1,0 +1,16 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "NGBS iCON Setup",
+        "description": "Connect your NGBS iCON cloud account.",
+        "data": {
+          "username": "Username",
+          "password": "Password",
+          "icon_id": "iCON System ID",
+          "scan_interval": "Scan interval (seconds)"
+        }
+      }
+    }
+  }
+}
