@@ -1,0 +1,10 @@
+{
+  "domain": "ngbs_icon",
+  "name": "NGBS iCON Thermostat",
+  "version": "0.1.0",
+  "documentation": "https://github.com/Dwokfur/homeassistant-ngbs-icon",
+  "dependencies": [],
+  "codeowners": ["@Dwokfur"],
+  "requirements": ["aiohttp", "beautifulsoup4"],
+  "config_flow": true
+}
