@@ -9,7 +9,7 @@ async def async_setup_entry(hass: HomeAssistant, config_entry):
     username = config_entry.data["username"]
     password = config_entry.data["password"]
     icon_id = config_entry.data["icon_id"]
-    scan_interval = config_entry.options.get("scan_interval", 30)
+    scan_interval = config_entry.options.get("scan_interval", 300)
     session = aiohttp.ClientSession()
     client = NGBSiConClient(session, username, password, icon_id)
     hass.data.setdefault(DOMAIN, {})["client"] = client
