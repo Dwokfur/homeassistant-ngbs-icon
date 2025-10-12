@@ -16,7 +16,7 @@ class NgbsIconConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 vol.Required("username"): str,
                 vol.Required("password"): str,
                 vol.Required("icon_id"): str,
-                vol.Optional("scan_interval", default=30): int,
+                vol.Optional("scan_interval", default=300): int,
             }),
             errors=errors,
         )
