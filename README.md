@@ -8,6 +8,10 @@
 - Async, error-handling, periodic session refresh
 - Home Assistant config flow (UI setup)
 - Exposes thermostats as `climate` entities
+- **Heating/cooling state control** - Automatically detects and controls heating or cooling mode based on system configuration
+- **HVAC mode support** - Off, Heat, Cool, and Auto modes
+- **Preset modes** - Eco, Comfort (Auto), and Manual control
+- **Humidity monitoring** - Displays current relative humidity from thermostat sensor
 
 ## Attribution
 
