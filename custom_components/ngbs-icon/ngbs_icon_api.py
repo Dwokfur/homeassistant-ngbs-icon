@@ -61,7 +61,20 @@ class NGBSiConClient:
             async with async_timeout.timeout(10):
                 async with self._session.get(f"{BASE_URL}/Ax?action=iconList", headers=headers) as resp:
                     data = await resp.json()
-                    return data["ICONS"][self._icon_id]["DP"]
+                    devices = data["ICONS"][self._icon_id]["DP"]
+                    # Extract is_winter flag from CON_VALUE (global setting)
+                    con_value = data["ICONS"][self._icon_id].get("CON_VALUE", 0)
+                    is_winter = con_value == 0  # 0 = heating (winter), 1 = cooling (summer)
+                    
+                    # Enhance each device with additional properties
+                    for device in devices:
+                        device["is_winter"] = is_winter
+                        # Ensure OUT, RH, and CE properties are included
+                        device.setdefault("OUT", 0)
+                        device.setdefault("RH", None)
+                        device.setdefault("CE", 0)
+                    
+                    return devices
         except Exception as err:
             _LOGGER.error(f"Device fetch error: {err}")
             return []
