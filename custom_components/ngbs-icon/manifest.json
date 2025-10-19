@@ -1,3 +1,5 @@
+from textwrap import dedent
+print(dedent('''
 {
   "domain": "ngbs_icon",
   "name": "NGBS iCON Thermostat",
@@ -9,3 +11,4 @@
   "config_flow": true,
   "iot_class": "cloud_polling"
 }
+'''))

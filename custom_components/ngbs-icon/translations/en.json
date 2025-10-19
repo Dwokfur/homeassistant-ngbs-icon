@@ -1,3 +1,5 @@
+from textwrap import dedent
+print(dedent('''
 {
   "config": {
     "step": {
@@ -10,32 +12,11 @@
           "icon_id": "iCON System ID",
           "scan_interval": "Scan interval (seconds)"
         }
-      },
-      "init": {
-        "title": "NGBS iCON Options",
-        "description": "Configure options for NGBS iCON integration.",
-        "data": {
-          "scan_interval": "Scan interval (seconds)"
-        }
       }
     },
     "error": {
-      "auth_failed": "Authentication failed. Please check your username and password.",
-      "cannot_connect": "Unable to connect to NGBS iCON cloud or invalid iCON ID."
-    },
-    "abort": {
-      "already_configured": "This iCON ID is already configured."
-    }
-  },
-  "options": {
-    "step": {
-      "init": {
-        "title": "NGBS iCON Options",
-        "description": "Configure options for NGBS iCON integration.",
-        "data": {
-          "scan_interval": "Scan interval (seconds)"
-        }
-      }
+      "auth_failed": "Authentication failed. Please check your credentials."
     }
   }
 }
+'''))
