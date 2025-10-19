@@ -1,5 +1,3 @@
-from textwrap import dedent
-print(dedent('''
 import logging
 from homeassistant.core import HomeAssistant
 from homeassistant.config_entries import ConfigEntry
@@ -37,4 +35,3 @@ async def async_unload_entry(hass: HomeAssistant, config_entry: ConfigEntry):
         for key in ("client", "scan_interval"):
             hass.data.get(DOMAIN, {}).pop(key, None)
     return unload_ok
-'''))
