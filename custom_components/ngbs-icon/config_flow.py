@@ -1,5 +1,3 @@
-from textwrap import dedent
-print(dedent('''
 import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
@@ -46,4 +44,3 @@ class NgbsIconConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             ),
             errors=errors,
         )
-'''))
