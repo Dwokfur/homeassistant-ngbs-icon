@@ -1,5 +1,3 @@
-from textwrap import dedent
-print(dedent('''
 import logging
 from datetime import timedelta
 
@@ -174,4 +172,3 @@ class NGBSiConThermostat(CoordinatorEntity, ClimateEntity):
             ce = CE_AUTO_RUN
         await self._client.async_set_thermostat_attr(self._device_id, "CE", ce)
         await self.coordinator.async_request_refresh()
-'''))
