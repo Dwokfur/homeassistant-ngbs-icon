@@ -1,10 +1,8 @@
-from textwrap import dedent
-print(dedent('''
 DOMAIN = "ngbs_icon"
 PLATFORMS = ["climate"]
 
-DEFAULT_SCAN_INTERVAL = 300  # seconds
-SESSION_REFRESH_INTERVAL = 3600  # seconds  # retained for possible future use
+DEFAULT_SCAN_INTERVAL = 50  # seconds
+SESSION_REFRESH_INTERVAL = 500  # seconds  # retained for possible future use
 
 # Preset modes for Eco/Manual
 PRESET_ECO = "eco"
@@ -16,4 +14,3 @@ PRESET_NONE = "none"
 CE_AUTO_RUN = 0
 CE_OFF = 1
 CE_ECO = 2
-'''))
