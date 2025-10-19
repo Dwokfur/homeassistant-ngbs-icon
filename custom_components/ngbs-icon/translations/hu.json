@@ -1,0 +1,19 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "NGBS iCON Telepítés",
+        "description": "NGBS iCON hozzáférés beállítása.",
+        "data": {
+          "username": "Felhasználó",
+          "password": "Jelszó",
+          "icon_id": "iCON Rendszer ID",
+          "scan_interval": "Lekérdezés gyakorisága (másodperc)"
+        }
+      }
+    },
+    "error": {
+      "auth_failed": "Meghiúsult bejelentkezés. Ellenőrizze a megadott adatokat."
+    }
+  }
+}
