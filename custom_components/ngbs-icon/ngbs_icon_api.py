@@ -1,5 +1,3 @@
-from textwrap import dedent
-print(dedent('''
 import logging
 
 import async_timeout
@@ -109,4 +107,3 @@ class NGBSiConClient:
         except Exception as err:
             _LOGGER.error("Set attribute error: %s", err)
             return False
-'''))
