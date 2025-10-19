@@ -1,3 +1,5 @@
+from textwrap import dedent
+print(dedent('''
 {
   "config": {
     "step": {
@@ -11,6 +13,10 @@
           "scan_interval": "Scan interval (seconds)"
         }
       }
+    },
+    "error": {
+      "auth_failed": "Authentication failed. Please check your credentials."
     }
   }
 }
+'''))
